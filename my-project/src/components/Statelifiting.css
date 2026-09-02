@@ -1,0 +1,26 @@
+.child {
+  padding: 25px;
+  background: #f5f5f5;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+}
+
+.child input {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  outline: none;
+}
+
+.child input:focus {
+  border-color: #007bff;
+}
+
+.child p {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
