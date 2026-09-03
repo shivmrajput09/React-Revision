@@ -1,0 +1,44 @@
+ /* App.css */
+
+/* Center everything on the page and give it a background */
+.appp {
+  width: 800px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+   background-color: #f4f4f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Style the counter text */
+.appp h1 {
+  font-size: 3rem;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+/* Make the button look modern */
+.appp button {
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Add a hover effect when the mouse is over the button */
+.appp button:hover {
+  background-color: #0056b3;
+}
+
+/* Add a click effect when the button is pressed */
+.appp button:active {
+  transform: scale(0.95);
+}
