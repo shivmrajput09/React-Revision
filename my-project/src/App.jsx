@@ -1,21 +1,26 @@
-    import './App.css'
-import Statelifting from './components/Statelifting'
-import { useState } from 'react'
+ import React from 'react'
+import UsePractice from './components/UsePractice'
+import {useState } from 'react';
+  
 
-function App() {
-  //create state
-  //manage state
-  //change state
-  //sbhi child me state ko sync karwadunga
+ const App = () => {
+const [count , setCount] = useState(0);
 
-  const[name,setName] = useState('');
+  function handleClick(){
+setCount(count + 1);
+  }
  
-  return (
-    <div className="App">
-<Statelifting  name ={name} setName={setName}/>
-<p>i m inside parent component and name is <b>{name}</b></p>
-    </div>
-  )
-}
-
-export default App
+   return (
+  
+     <div>
+      <button onClick={handleClick}>count</button>
+      <h1>{count}</h1>
+      <br/>
+        <UsePractice count ={count} />
+ 
+     </div>
+   )
+ }
+ 
+ export default App
+ 
